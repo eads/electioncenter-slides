@@ -1,16 +1,14 @@
-# Build websites with Tarbell
+# 2014 Illinois Primaries 
 
-### (Draft, work in progress)
-
-Docs + info: [tarbell.tribapps.com](http://tarbell.tribapps.com)
-
-Tutorial: [build-with-tarbell.readthedocs.org](http://build-with-tarbell.readthedocs.org)
-
-Presentation source: [github.com/eads/build-with-tarbell](http://github.com/eads/build-with-tarbell)
+### News apps agony and ecstasy
 
 <hr/>
 
-David Eads [@eads](http://twitter.com/eads)
+### [elections.chicagotribune.com](http://elections.chicagotribune.com)
+
+<hr/>
+
+Presented by David Eads [@eads](http://twitter.com/eads) at OpenGov Hack Night, April 1 2014
 
 Chicago Tribune News Applications [@tribapps](http://twitter.com/tribapps)
 
