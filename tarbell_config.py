@@ -11,10 +11,10 @@ NAME = "building-with-tarbell"
 TITLE = "Building websites with Tarbell"
 
 # Google spreadsheet key
-SPREADSHEET_KEY = "0Ak3IIavLYTovdF9UOVlVaXlSV3FlUzlVci1YbmVYZnc"
+SPREADSHEET_KEY = "0Ak3IIavLYTovdEV5NXNmMktOZzlrUzAzS2NHd1JWYWc"
 
 # Exclude these files from publication
-EXCLUDES = ["*.md", "requirements.txt", "docs/*"]
+EXCLUDES = ["*.md", "requirements.txt", "docs/*", "slides/*"]
 
 # Create JSON data at ./data.json, disabled by default
 # CREATE_JSON = True
@@ -30,6 +30,6 @@ S3_BUCKETS = {
 
 # Default template variables
 DEFAULT_CONTEXT = {
-    'name': 'building-with-tarbell',
-    'title': 'Building websites with Tarbell'
+    'name': '2014-primaries',
+    'title': '2014 Primaries'
 }
