@@ -1,12 +1,12 @@
-# 2014 Illinois Primaries 
-
-### News apps agony and ecstasy
+# Election Center
 
 <hr/>
 
-### [elections.chicagotribune.com](http://elections.chicagotribune.com)
+## 2014 Illinois Primaries Edition
 
 <hr/>
+
+## [elections.chicagotribune.com](http://elections.chicagotribune.com)
 
 Presented by David Eads [@eads](http://twitter.com/eads) at OpenGov Hack Night, April 1 2014
 
