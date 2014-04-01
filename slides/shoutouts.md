@@ -1,5 +1,6 @@
 ## Credits + shoutouts
 
+* __Editorial board coordinator__: Jessica Reynolds
 * __User interface & design__: Alex Bordens, Chris Courtney
 * __Frontend application__: Chris Courtney, David Eads, Ryan Nagle
 * __Print integration__: Andy Boyle, Jordan Dziura, Rodney Eslinger, Dave Berry

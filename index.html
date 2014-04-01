@@ -10,7 +10,18 @@
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6/css/theme/night.css" />
   <style>
     .reveal h1 {
-      text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2)
+      text-shadow: none;
+    }
+    .reveal h1.label {
+      position: absolute;
+      font-size: 1.4em;
+      line-height: 1.1em;
+      background-color: #ffc700;
+      padding: .3em;
+      color: #000;
+    }
+    .reveal h2 {
+      margin-bottom: .7em;
     }
     .reveal .slide-dark h1,
     .reveal .slide-dark h2,
@@ -53,7 +64,7 @@
       padding-top: .25em;
       padding-bottom: .25em;
     }
-    hr { display: block; height: 1px; border: 0; border-top: 1px solid #aaa; margin: .75em 0; padding: 0; }
+    hr { display: block; height: 1px; border: 0; border-top: 1px solid #aaa; margin: 1.1em 0; padding: 0; }
     .reveal pre {
       margin: 0;
       width: auto;
@@ -65,7 +76,9 @@
     p .file-name {
       color: #5ad75a;
     }
-    .reveal pre code { max-height: none; } 
+    .reveal pre code { max-height: none; }
+    .reveal li { margin-bottom: .4em; }
+
   </style>
   {% endblock css %}
 
@@ -111,7 +124,10 @@
 <div class="reveal">
   <div class="slides">
     {% for slide in slides %}
-    <section id="{{ slide.id }}"{% if slide.class %} class="{{ slide.class }}"{% endif %}{% if slide.background_url %} data-background="images/{{ slide.background_url }}"{% endif %}{% if slide.background_color %} data-background-color="{{ slide.background_color }}"{% endif %}{% if slide.background_repeat %} data-background-repeat="{{ slide.background_repeat }}"{% endif %}{% if slide.background_size %} data-background-size="{{ slide.background_size }}"{% endif %}>
+    <section id="{{ slide.id }}"{% if slide.class %} class="{{ slide.class }}"{% endif %}{% if slide.background_image %} data-background="images/{{ slide.background_image }}"{% endif %}{% if slide.background_color %} data-background-color="{{ slide.background_color }}"{% endif %}{% if slide.background_repeat %} data-background-repeat="{{ slide.background_repeat }}"{% endif %}{% if slide.background_size %} data-background-size="{{ slide.background_size }}"{% endif %}>
+      {% if slide.label %}
+        <h1 class="label" style="{% if slide.label_top %}top: {{ slide.label_top }}%; {% endif %}{% if slide.label_left %}left: {{ slide.label_left }}%; {% endif %}{% if slide.label_bottom %}bottom: {{ slide.label_bottom }}%; {% endif %}{% if slide.label_right %}right: {{ slide.label_right }}%;{% endif %}">{{ slide.label }}</h1>
+      {% endif %}
       {{ read_file("slides/{0}.md".format(slide.id))|markdown }}
     </section>
     {% endfor %}
@@ -129,25 +145,10 @@
   // https://github.com/hakimel/reveal.js#configuration
   Reveal.initialize({
     controls: true,
-    progress: true,
     history: true,
-    /*center: true,*/
-
-    /*theme: Reveal.getQueryHash().theme, // available themes are in /css/theme*/
-    /*transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none*/
     transition: 'linear',
     theme: 'beige',
     
-    // Parallax scrolling
-    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-    // parallaxBackgroundSize: '2100px 900px',
-
-    // Optional libraries used to extend on reveal.js
-    dependencies: [
-      { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-      { src: '//cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-    ]
   });
 
 </script>
