@@ -31,5 +31,5 @@ S3_BUCKETS = {
 # Default template variables
 DEFAULT_CONTEXT = {
     'name': '2014-primaries',
-    'title': '2014 Primaries'
+    'title': 'Chicago Tribune News Apps Election Center - 2014 Primaries'
 }
