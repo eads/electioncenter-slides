@@ -12,3 +12,4 @@ Presented by David Eads [@eads](http://twitter.com/eads) at OpenGov Hack Night, 
 
 Chicago Tribune News Applications [@tribapps](http://twitter.com/tribapps)
 
+Presentation: [slides.chicagotribune.com/electioncenter](http://slides.chicagotribune.com/electioncenter)
