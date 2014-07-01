@@ -1,5 +1,7 @@
-# Tutorial + presentation on Tarbell
+# Chicago Tribune Election Center 2.0
 
-* Presentation: http://tarbell.tribapps.com/build-with-tarbell
-* Tutorial: http://build-with-tarbell.readthedocs.org
+Presentation given at OpenGov Hack Night, April 1, 2014.
+
+Video: https://www.youtube.com/watch?v=wJwQyvWw-PM#t=15:03
+
 
