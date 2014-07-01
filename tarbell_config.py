@@ -14,7 +14,7 @@ TITLE = "Chicago Tribune News Apps Election Center 2.0 Slideshow"
 SPREADSHEET_KEY = "0Ak3IIavLYTovdEV5NXNmMktOZzlrUzAzS2NHd1JWYWc"
 
 # Exclude these files from publication
-EXCLUDES = ["*.md", "requirements.txt", "docs/*", "slides/*"]
+EXCLUDES = ["requirements.txt", "slides/*"]
 
 # Create JSON data at ./data.json, disabled by default
 # CREATE_JSON = True
