@@ -5,10 +5,10 @@ Tarbell project configuration
 """
 
 # Short project name
-NAME = "building-with-tarbell"
+NAME = "electioncenter-slides"
 
 # Descriptive title of project
-TITLE = "Building websites with Tarbell"
+TITLE = "Chicago Tribune News Apps Election Center 2.0 Slideshow"
 
 # Google spreadsheet key
 SPREADSHEET_KEY = "0Ak3IIavLYTovdEV5NXNmMktOZzlrUzAzS2NHd1JWYWc"
@@ -30,6 +30,6 @@ S3_BUCKETS = {
 
 # Default template variables
 DEFAULT_CONTEXT = {
-    'name': '2014-primaries',
-    'title': 'Chicago Tribune News Apps Election Center - 2014 Primaries'
+    'name': 'electioncenter-sides ',
+    'title': 'Chicago Tribune News Apps Election Center 2.0 Slideshow'
 }
